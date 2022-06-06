@@ -1,0 +1,94 @@
+.faixalinks {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5px;
+  height: 1.8cm;
+  width: 100%;
+}
+
+/* alinhamento do link*/
+.links{
+  align-items: flex-end;
+  padding-right: 1%;    
+}
+
+/*faixa do layout do header*/
+
+.layout {
+  
+  background-color: #98D9AC;
+  padding: 0.1em;
+  border-bottom: 4px solid;
+  height: 1.3cm;
+  width: 100%;
+
+}
+
+/*botão entrar*/
+
+.buttonEntra{
+  background-color: #eeeeee;
+  border: 2px;
+  color: #001707;
+  font-size: 11px;
+  height: 1cm;
+  width: 2cm;
+  border-radius: 7px;
+  transition: background .3s;
+  margin: 2px;
+  
+}
+.buttonEntra:focus{
+  background-color: #707070;
+      
+}
+.buttonEntra:active{
+  color: #001707;
+  background-color: #D0DCD4;
+  
+}
+/*botão Cadastro*/
+
+.buttonCadastro{
+  background-color: #001707;
+  border: 2px;
+  color: #ffffff;
+  font-size: 12px;
+  height: 1cm;
+  width: 2cm;
+  border-radius: 7px;
+  transition: background .3s;
+  margin: 2px;
+  
+}
+.buttonCadastro:focus{
+  background-color: #707070;
+      
+}
+.buttonCadastro:active{
+  color: #001707;
+  background-color: #D0DCD4;
+  
+}
+
+/*footer*/
+
+.contenerfooter {
+  position: absolute;
+  bottom: 0;
+  background: #98D9AC;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0%; 
+ 
+}
+footer {
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2ex;
+  
+}
