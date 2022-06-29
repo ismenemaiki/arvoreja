@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro.component.scss']
 })
 export class CadastroComponent implements OnInit {
+  dadosUsuario = this.fb.group({
+    nome: ['', Validators.required],
+    sobrenome: ['', Validators.required],
+    nascimento: [''],
+    endereco: this.fb.group({
+      logradouro: [''],
+      numero: [''],
+      cidadeEstado: [''],
+      cep: [''],
+      complemento: ['']
+    })
+  });
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  onSubmit() {
+    // salvar no endpoint de cadastro
+    console.log(this.dadosUsuario.value);
   }
-
 }

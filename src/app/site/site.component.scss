@@ -1,11 +1,7 @@
 .main {
-    display: flex;
-}
-    
-router-outlet {
-    border: 1px solid red;
-}
+  display: flex;
 
-app-menu-lateral {
-    border: 1px solid blue;
+  app-menu-lateral {
+    width: 25%;
+  }
 }

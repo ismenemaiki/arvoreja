@@ -1,1 +1,57 @@
-<p>cadastro works!</p>
+<div class="formulario">
+  <form [formGroup]="dadosUsuario" (ngSubmit)="onSubmit()">
+    <h1>Cadastro</h1>
+    <div class="linha">
+      <div class="item">
+        <label for="nome">Nome: </label>
+        <input id="nome" type="text" formControlName="nome" required>
+      </div>
+
+      <div class="item">
+        <label for="sobrenome">Sobrenome: </label>
+        <input id="sobrenome" type="text" formControlName="sobrenome">
+      </div>
+
+      <div class="item">
+        <label for="nascimento">Data de nascimento: </label>
+        <input id="nascimento" type="date" formControlName="nascimento">
+      </div>
+    </div>
+
+    <div formGroupName="endereco">
+      <span></span>
+      <div class="linha">
+        <div class="item">
+          <label for="logradouro">Logradouro: </label>
+          <input id="logradouro" type="text" formControlName="logradouro">
+        </div>
+
+        <div class="item">
+          <label for="numero">Número: </label>
+          <input id="numero" type="text" formControlName="numero">
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="item">
+          <label for="cidadeEstado">Cidade/ Estado: </label>
+          <input id="cidadeEstado" type="text" formControlName="cidadeEstado">
+        </div>
+
+        <div class="item">
+          <label for="cep">CEP: </label>
+          <input id="cep" type="number" formControlName="cep">
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="item">
+          <label for="cep">Complemento: </label>
+          <input id="complemento" type="text" formControlName="complemento">
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="!dadosUsuario.valid">Enviar</button>
+  </form>
+</div>
