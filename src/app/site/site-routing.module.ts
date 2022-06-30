@@ -48,6 +48,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./paginas/doacao/doacao.module').then((m) => m.DoacaoModule),
       },
+      {
+        path: 'login',
+        loadChildren: () =>
+          import('./paginas/login/login.module').then((m) => m.LoginModule),
+      },
     ],
   },
 ];

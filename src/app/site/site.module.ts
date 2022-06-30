@@ -13,8 +13,7 @@ import { LoginComponent } from './paginas/login/login.component';
   declarations: [
     SiteComponent,
     MenuComponent,
-    MenuLateralComponent,
-    LoginComponent
+    MenuLateralComponent
   ],
   imports: [
     CommonModule,

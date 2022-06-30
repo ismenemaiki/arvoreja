@@ -41,23 +41,8 @@ form {
     margin-left: 10px;
   }
 }
-button:disabled {
-  background-color: #707070;
-}
+
 button {
-  background-color: #001707;
-  border: 2px;
-  color: #ffffff;
-  font-size: 18px;
-  height: 35px;
-  width: 98%;
-  border-radius: 7px;
+  width: 99%;
   margin: 20px 0 0 10px;
-}
-button:focus {
-  background-color: #707070;
-}
-button:active {
-  color: #001707;
-  background-color: #d0dcd4;
 }

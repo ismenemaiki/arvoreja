@@ -14,7 +14,9 @@ export class MenuComponent implements OnInit {
     console.log('menu');
 
   }
-  login() { }
+  login() {
+    this.router.navigate(['/login']);
+  }
 
   cadastro(): void {
     this.router.navigate(['/cadastro']);

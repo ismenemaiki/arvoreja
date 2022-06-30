@@ -1,1 +1,17 @@
-<p>login works!</p>
+<div class="center">
+  <form [formGroup]="dadosUsuario" (ngSubmit)="onSubmit()">
+    <div class="logo">
+      <img src="../../../../assets/arvore.png" alt="">
+      <h1>Mais Árvores</h1>
+    </div>
+
+    <input class="custom" placeholder="email@email.com" id="email" type="email" formControlName="email">
+    <input class="custom" placeholder="senha" id="senha" type="password" formControlName="senha">
+    <div class="checkbox">
+      <input type="checkbox" name="lembrar" id="lembrar" (change)="checkbox($event)">
+      <p>lembre-me</p>
+    </div>
+
+    <button type="submit" [disabled]="!dadosUsuario.valid">Entrar</button>
+  </form>
+</div>
