@@ -1,8 +1,8 @@
 .formulario {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 h1 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 form {
   display: flex;
@@ -42,24 +42,22 @@ form {
   }
 }
 button:disabled {
-    background-color: #707070;
+  background-color: #707070;
 }
 button {
-    background-color: #001707;
-    border: 2px;
-    color: #ffffff;
-    font-size: 18px;
-    height: 35px;
-    width: 98%;
-    border-radius: 7px;
-    margin: 20px 0 0 10px;    
-  }
-  button:focus {
-    background-color: #707070;
-        
-  }
-  button:active {
-    color: #001707;
-    background-color: #D0DCD4;    
-  }
-  
+  background-color: #001707;
+  border: 2px;
+  color: #ffffff;
+  font-size: 18px;
+  height: 35px;
+  width: 98%;
+  border-radius: 7px;
+  margin: 20px 0 0 10px;
+}
+button:focus {
+  background-color: #707070;
+}
+button:active {
+  color: #001707;
+  background-color: #d0dcd4;
+}

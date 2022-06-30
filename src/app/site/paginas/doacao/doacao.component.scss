@@ -1,0 +1,30 @@
+.formulario {
+  margin-top: 60px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  input {
+    height: 25px;
+  }
+}
+button:disabled {
+  background-color: #707070;
+}
+button {
+  background-color: #001707;
+  border: 2px;
+  color: #ffffff;
+  font-size: 18px;
+  height: 35px;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+button:focus {
+  background-color: #707070;
+}
+button:active {
+  color: #001707;
+  background-color: #d0dcd4;
+}

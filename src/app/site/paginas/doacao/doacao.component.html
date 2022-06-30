@@ -1,0 +1,19 @@
+<div class="formulario">
+    <form [formGroup]="dadosDoacao" (ngSubmit)="onSubmit()">
+        <h1>Cadastro de mudas para doação</h1>
+
+        <label for="nomeDoador">Doador: </label>
+        <input id="nomeDoador" type="text" formControlName="nomeDoador">
+
+        <label for="nomeReceptor">Receptor: </label>
+        <input id="nomeReceptor" type="text" formControlName="nomeReceptor">
+
+        <label for="arvore">Árvore: </label>
+        <input id="arvore" type="text" formControlName="arvore">
+
+        <label for="endereco">Endereço: </label>
+        <input id="endereco" type="text" formControlName="endereco">
+
+        <button type="submit" [disabled]="!dadosDoacao.valid">Enviar</button>
+    </form>
+</div>
