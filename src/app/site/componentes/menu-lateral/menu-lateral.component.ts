@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -6,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './menu-lateral.component.html',
   styleUrls: ['./menu-lateral.component.scss']
 })
-export class MenuLateralComponent implements OnInit {
+export class MenuLateralComponent  {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  
+
+  contato(): void {
+    this.router.navigate(['contato']);
   }
 
+  doeMudas(): void {
+    this.router.navigate(['doacao']);
+  }
 }

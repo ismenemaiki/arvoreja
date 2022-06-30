@@ -43,6 +43,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./paginas/cadastro/cadastro.module').then((m) => m.CadastroModule),
       },
+      {
+        path: 'doacao',
+        loadChildren: () =>
+          import('./paginas/doacao/doacao.module').then((m) => m.DoacaoModule),
+      },
     ],
   },
 ];
